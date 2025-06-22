@@ -86,7 +86,14 @@
             document.getElementById('bingo-status').textContent = bingo ? "🎉 BINGO!" : "";
         }
 
-        generateBoard();
+        document.getElementById('start-game').addEventListener('click', () => {
+            document.getElementById('instructions-screen').style.display = 'none';
+            generateBoard(); // start the bingo game
+});
+
+
+        // generateBoard();
+        
     </script>
 </body>
 </html>
